@@ -28,6 +28,13 @@ read -p "Qual a ação deverá ser realizada, start ou stop? " ACAO
 
 #-------------------------------------------------------------------
 
+#Trata inserção case-sensitive das variaveis
+
+STATUS=$(echo $STATUS | tr 'A-Z' 'a-z')
+ACAO=$(echo $ACAO | tr 'A-Z' 'a-z')
+
+#-------------------------------------------------------------------
+
 
 # Salva em um arquivo as instacias com o estado escolhido
 
