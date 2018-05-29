@@ -1,3 +1,9 @@
 # CLI-AWS-BASH
-apanhado de scripts basicos para manipulação da AWS no BASH linux
-A variavel PATHD do script "AwsPararIniciarInstacias.sh" deve ser configurada conforme seu ambiente
+_apanhado de scripts basicos para manipulação da AWS no BASH linux_
+
+## Pontos Importantes Sobre os Scripts 
+* **script "AwsPararIniciarInstacias.sh"** 
+  * A variavel **PATHD** deve ser configurada conforme seu ambiente local
+  * Ainda não foi realizado o tratamento para o "case-sensitive" portanto 
+    todos os dados devem ser inseridos com letras **_MINUSCULAS_**
+---
