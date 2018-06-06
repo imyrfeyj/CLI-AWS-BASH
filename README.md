@@ -6,5 +6,5 @@ _apanhado de scripts basicos para manipulação da AWS no BASH linux_
 
 ## Pontos Importantes Sobre os Scripts 
  * **script "AwsPararIniciarInstacias.sh"** 
-  * A variavel **PATHD** deve ser configurada conforme seu ambiente local
+   * A variavel **PATHD** deve ser configurada conforme seu ambiente local
 ---
