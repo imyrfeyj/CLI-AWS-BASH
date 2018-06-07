@@ -11,9 +11,13 @@
 # Exemplo de uso: ./ParaIniciarTodos                                    #
 #########################################################################
 
-#Variaveis 
+ # Caminho do arquivo auxiliar
 
 PATHD=/home/mauricio/script-aws/.rinstance.txt
+
+#-----------------------------------------------------------
+
+#Variaveis 
 
 read -p "Informe o status das instacias afetadas entre: pending | running | shutting-down | stopping | stopped " STATUS
 
