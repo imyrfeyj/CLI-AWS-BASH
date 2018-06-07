@@ -39,19 +39,19 @@ aws ec2 describe-instances --filters "Name=instance-state-name,Values=$STATUS" |
 
 case $ACAO in 
 	stop)
-	for count in $(cat $PATHD)
+	for ID in $(cat $PATHD)
 	do
-		echo "Parando instacia: $count" 
-		aws ec2 stop-instances --instance-ids $count
+		echo "Parando instacia: $ID" 
+		aws ec2 stop-instances --instance-ids $ID
 	done
 	;;
  
  
 	start)
-	for count in $(cat $PATHD)
+	for ID in $(cat $PATHD)
 	do
-		echo "Iniciando instancia: $count" 
-		aws ec2 start-instances --instance-ids $count
+		echo "Iniciando instancia: $ID" 
+		aws ec2 start-instances --instance-ids $ID
 	done
 	;;
 esac
