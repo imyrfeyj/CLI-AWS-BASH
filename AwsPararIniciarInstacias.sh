@@ -1,19 +1,20 @@
 #!/bin/bash
 
-#########################################################################
-# 								                                        #
-# PararIniciarTodos.sh - inicia ou para todas as instancia da aws       #
-# Autor: Mauricio Grillo de Moura (https://github.com/imyrfeyj)         #
-# Data Criação: 29/05/2018					                            #
-# Descrição: Script inicia ou para todas as instancias de uma conta AWS #
-#	    	 que estejam em um estado, este .SH permite que o usuario   #   
-#            escolha o estado das instancias que serão afetadas.        #
-# Exemplo de uso: ./ParaIniciarTodos                                    #
-#########################################################################
+#############################################################################
+# 								            #
+# AwsPararIniciarInstacias.sh - inicia ou para todas as instancia da aws    #
+# Autor: Mauricio Grillo de Moura (https://github.com/imyrfeyj)             #
+# Data Criação: 29/05/2018					            #
+# Descrição: Script inicia ou para todas as instancias de uma conta AWS     #
+#	     que estejam em um estado, este .SH permite que o usuario       #   
+#            escolha o estado das instancias que serão afetadas.            #  
+# Versão: 1.2                                                               #
+# Exemplo de uso: sudo ./AwsPararIniciarInstacias.sh                        #
+#############################################################################
 
- # Caminho do arquivo auxiliar
+ # Caminho do arquivo de cache
 
-PATHD=/home/mauricio/script-aws/.rinstance.txt
+PATHD=$HOME/.rinstance.txt
 
 #-----------------------------------------------------------
 
@@ -31,7 +32,7 @@ STATUS=$(echo $STATUS | tr 'A-Z' 'a-z')
 ACAO=$(echo $ACAO | tr 'A-Z' 'a-z')
 
 #-------------------------------------------------------------------
-
+touch $HOME/.rinstance.txt
 
 # Salva em um arquivo as instacias com o estado escolhido
 
@@ -59,4 +60,5 @@ case $ACAO in
 	done
 	;;
 esac
+rm -r $HOME/.rinstance.txt
 # teste
