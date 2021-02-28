@@ -4,7 +4,8 @@
 # 								            #
 # AwsPararIniciarInstacias.sh - inicia ou para todas as instancia da aws    #
 # Autor: Mauricio Grillo de Moura (https://github.com/imyrfeyj)             #
-# Data Criação: 29/05/2018					            #
+# Data Criação: 29/05/2018
+# Dependencias: aws cli
 # Descrição: Script inicia ou para todas as instancias de uma conta AWS     #
 #	     que estejam em um estado, este .SH permite que o usuario       #   
 #            escolha o estado das instancias que serão afetadas.            #  
